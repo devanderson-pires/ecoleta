@@ -1,0 +1,96 @@
+#page-home {
+  height: 100vh;
+}
+
+#page-home .content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+#page-home .content header {
+  margin: 48px 0 0;
+}
+/* fim header */
+
+#page-home .content main {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 560px;
+}
+
+#page-home .content main h1 {
+  font-size: 42px;
+}
+
+#page-home .content main p {
+  font-size: 24px;
+  line-height: 38px;
+  margin-top: 24px;
+}
+
+#page-home .content main a {
+  align-items: center;
+  background: var(--primary-color);
+  border-radius: 8px;
+  display: flex;
+  height: 72px;
+  margin-top: 40px;
+  max-width: 360px;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100%;
+}
+
+#page-home .content main a:focus,
+#page-home .content main a:hover {
+  background: #2fb86e;
+}
+
+#page-home .content main a span {
+  align-items: center;
+  background: rgba(0, 0, 0, .08);
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  transition: background-color .2s;
+  width: 72px;
+}
+
+#page-home .content main a span svg {
+  color: #fff;
+  height: 20px;
+  width: 20px;
+}
+
+#page-home .content main a strong {
+  color: #fff;
+  flex: 1;
+  text-align: center;
+}
+
+@media (min-width: 900px) {
+  #page-home {
+    background: url('../../assets/home-background.svg') no-repeat 800px bottom;
+  }
+
+  #page-home .content {
+    align-items: unset;
+  }
+
+  #page-home .content main {
+    align-items: unset;
+  }
+
+  #page-home .content main h1 {
+    font-size: 54px;
+  }
+}

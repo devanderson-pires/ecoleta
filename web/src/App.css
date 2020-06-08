@@ -1,0 +1,26 @@
+:root {
+  --bg-color: #f0f0f0;
+  --primary-color: #34cb79;
+  --title-color: #322153;
+  --text-color: #6c6c80;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+body, button, input {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+  font-family: 'Ubuntu', sans-serif;
+}

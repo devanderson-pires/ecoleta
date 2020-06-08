@@ -1,0 +1,209 @@
+#page-createPoint {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 0 30px;
+  width: 100%;
+}
+
+.createPoint__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 48px;
+}
+
+.createPoint__link {
+  align-items: center;
+  color: var(--title-color);
+  display: flex;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.createPoint__link svg {
+  color: var(--primary-color);
+  margin-right: 16px;
+}
+/* fim header */
+
+.createPoint__form {
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin:  80px auto;
+  max-width: 730px;
+  padding: 32px;
+}
+
+.createPoint__title {
+  font-size: 36px;
+}
+
+.createPoint__form fieldset {
+  border: 0;
+  margin-top: 64px;
+  min-inline-size: auto;
+}
+
+.createPoint__form fieldset legend {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#page-createPoint form fieldset legend h2 {
+  font-size: 24px;
+}
+
+#page-createPoint form fieldset legend span {
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#page-createPoint form .field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+#page-createPoint form .field input[type="text"],
+#page-createPoint form .field input[type="email"],
+#page-createPoint form .field input[type="tel"],
+#page-createPoint form .field select {
+  background: #f0f0f5;
+  border: 0;
+  border-radius: 8px;
+  color: var(--text-color);
+  flex: 1;
+  font-size: 16px;
+  padding: 16px 24px;
+}
+
+#page-createPoint form .field select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#page-createPoint form .field input::placeholder {
+  color: #a0a0b2;
+}
+
+#page-createPoint form .field label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#page-createPoint form .field :disabled {
+  cursor: not-allowed;
+}
+
+#page-createPoint form .field-check {
+  align-items: center;
+  flex-direction: row;
+}
+
+#page-createPoint form .field-check input[type="checkbox"] {
+  background: #f0f0f5;
+}
+
+#page-createPoint form .field-check label {
+  margin: 0 0 0 8px;
+}
+
+#page-createPoint form .leaflet-container {
+  border-radius: 8px;
+  height: 350px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+#page-createPoint form button {
+  background: var(--primary-color);
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  height: 56px;
+  margin-top: 40px;
+  max-width: 260px;
+  transition: background .2s;
+  width: 100%;
+}
+
+#page-createPoint form button:focus,
+#page-createPoint form button:hover {
+  background: #2fb86e;
+}
+/* fim form */
+
+.items-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1fr;
+  list-style: none;
+}
+
+.items-grid li {
+  align-items: center;
+  background: #f5f5f5;
+  border: 2px solid #f5f5f5;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  justify-content: space-between;
+  padding: 32px 24px 16px;
+  text-align: center;
+}
+
+.items-grid li span {
+  align-items: center;
+  color: var(--title-color);
+  display: flex;
+  flex: 1;
+  margin-top: 12px;
+}
+
+.items-grid li.selected {
+  background: #e1faec;
+  border: 2px solid #34cb79;
+}
+/* fim itens */
+
+@media (min-width: 768px) {
+  #page-createPoint form {
+    padding: 64px;
+  }
+
+  #page-createPoint form .field-group {
+    display: flex;
+    flex: 1;
+  }
+
+  #page-createPoint form .field-group .field + .field {
+    margin-left: 24px;
+  }
+
+  #page-createPoint form .field-group input + input {
+    margin-left: 24px;
+  }
+
+  #page-createPoint form button {
+    align-self: flex-end;
+  }
+  /* fim form */
+
+  .items-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* fim itens */
+}
