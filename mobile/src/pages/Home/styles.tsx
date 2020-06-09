@@ -28,20 +28,7 @@ const styles = StyleSheet.create({
     marginTop: 16,
     maxWidth: 260,
   },
-
-  footer: {},
-
-  select: {},
-
-  input: {
-    backgroundColor: '#FFF',
-    borderRadius: 10,
-    fontSize: 16,
-    height: 60,
-    marginBottom: 8,
-    paddingHorizontal: 24,
-  },
-
+  
   button: {
     alignItems: 'center',
     backgroundColor: '#34CB79',
